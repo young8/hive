@@ -1,4 +1,4 @@
-FROM dataplatform/hadoop:0.1.0
+FROM dataplatform/hadoop:latest
 MAINTAINER Binh Van Nguyen
 
 # Running Hive Server 2
