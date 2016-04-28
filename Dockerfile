@@ -11,7 +11,7 @@ ENV HIVE_HOME /usr/local/hive
 ENV PATH ${PATH}:${HIVE_HOME}/bin
 WORKDIR ${HIVE_HOME}
 
-RUN mkir -p /etc/hive/conf
+RUN mkdir -p /etc/hive/conf
 COPY conf/hive-site.xml /etc/hive/conf/
 
 ENV HIVE_URL http://mirrors.advancedhosters.com/apache/hive/hive-${HIVE_VERSION}/apache-hive-${HIVE_VERSION}-bin.tar.gz
